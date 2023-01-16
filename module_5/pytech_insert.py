@@ -22,13 +22,13 @@ Jake = {
             "end_date": "November 19, 2022",
             "courses":  [
                 {
-                    "course_id": CSD310,
+                    "course_id": 310,
                     "description": "Database Systems",
                     "instructor": "Sanders",
                     "grade": "B",
                 },
                 {
-                    "course_id": CSD315,
+                    "course_id": 315,
                     "description": "Information Systems",
                     "instructor": "Blake",
                     "grade": "B",
@@ -50,13 +50,13 @@ Brad = {
             "end_date": "November 19, 2022",
             "courses":  [
                 {
-                    "course_id": CSD310,
+                    "course_id": 310,
                     "description": "Database Systems",
                     "instructor": "Sanders",
                     "grade": "A",
                 },
                 {
-                    "course_id": CSD315,
+                    "course_id": 315,
                     "description": "Information Systems",
                     "instructor": "Blake",
                     "grade": "A",
@@ -79,13 +79,13 @@ Carl = {
             "end_date": "November 19, 2022",
             "courses":  [
                 {
-                    "course_id": CSD310,
+                    "course_id": 310,
                     "description": "Database Systems",
                     "instructor": "Sanders",
                     "grade": "A",
                 },
                 {
-                    "course_id": CSD315,
+                    "course_id": 315,
                     "description": "Information Systems",
                     "instructor": "Blake",
                     "grade": "B",
@@ -97,16 +97,16 @@ Carl = {
 
 students = db.students
 
-jake_student_id = students.insert_one(jake).inserted_id
+jake_student_id = students.insert_one(Jake).inserted_id
 
 print("\n -- INSERT STATEMENTS -- ") 
 print(" Inserted student record Jake Smith into students collection with document_ID " + str(jake_student_id))
 
-brad_student_id = students.insert_one(brad).inserted_id
+brad_student_id = students.insert_one(Brad).inserted_id
 
 print(" Inserted student record Brad Peterson into students collection with document_ID " + str(brad_student_id))
 
-carl_student_id = students.insert_one(carl).inserted_id
+carl_student_id = students.insert_one(Carl).inserted_id
 
 print(" Inserted student record Carl Davidson into students collection with document_ID " + str(carl_student_id))
 
